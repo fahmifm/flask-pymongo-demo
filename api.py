@@ -12,7 +12,7 @@ def get_sensor_data():
     # pilih collection
     collection = db["data"]
 
-    # ambil 1 data dengan temperature 100
+    # ambil 1 data terakhir
     result = collection.find().sort("_id")
     result = list(result)
     if result:
